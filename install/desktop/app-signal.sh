@@ -1,4 +1,6 @@
 #!/bin/bash
+echo "Signal is not supported for armhf/arm64 architecture. Please install from the official website: https://signal.org/download/desktop/"
+return 0
 
 if [ ! -f /etc/apt/sources.list.d/signal-desktop.sources ]; then
   [ -f /usr/share/keyrings/signal-desktop-keyring.gpg ] && sudo rm /usr/share/keyrings/signal-desktop-keyring.gpg
