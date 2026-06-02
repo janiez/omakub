@@ -23,6 +23,7 @@ CHOICES=(
   "VirtualBox        Virtual machines to run Windows/Linux"
   "Zoom              Attend and host video chat meetings"
   "Web Apps          Install web apps with their own icon and shell"
+  "Tg-tf-switch      Tg and tf version switcher for managing multiple Terragrunt and Terraform versions"
   "> All             Re-run any of the default installers"
   "<< Back           "
 )
@@ -50,6 +51,7 @@ else
   "ollama") INSTALLER_FILE="$OMAKUB_PATH/install/terminal/optional/app-ollama.sh" ;;
   "tailscale") INSTALLER_FILE="$OMAKUB_PATH/install/terminal/optional/app-tailscale.sh" ;;
   "geekbench") INSTALLER_FILE="$OMAKUB_PATH/install/terminal/optional/app-geekbench.sh" ;;
+  "tg-tf-switch") INSTALLER_FILE="$OMAKUB_PATH/install/terminal/optional/app-tg-tf-switch.sh" ;;
   *) INSTALLER_FILE="$OMAKUB_PATH/install/desktop/optional/app-$INSTALLER.sh" ;;
   esac
 
