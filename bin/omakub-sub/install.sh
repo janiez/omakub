@@ -12,12 +12,12 @@ CHOICES=(
   "Discord           Communication platform for voice, video, and text messaging"
   "Gimp              Image manipulation tool ala Photoshop"
   "Geekbench         CPU benchmaking tool"
-  "Mainline Kernels  Install newer Linux kernels than Ubuntu defaults"
+  "GitHub Copilot CLI AI-powered command-line assistant"
+  "Mainline Kernels  Install newer Linux kernels than Debian defaults"
   "Minecraft         Everyone's favorite blocky building game"
   "OBS Studio        Record screencasts with inputs from both display + webcam"
   "Ollama            Run LLMs, like Meta's Llama3, locally"
   "Retroarch         Play retro games"
-  "Spotify           Stream music from the world's most popular service"
   "Steam             Play games from Valve's store"
   "Tailscale         Mesh VPN based on WireGuard and with Magic DNS"
   "VirtualBox        Virtual machines to run Windows/Linux"
@@ -50,6 +50,7 @@ else
   "dev-database") INSTALLER_FILE="$OMAKUB_PATH/install/terminal/select-dev-storage.sh" ;;
   "ollama") INSTALLER_FILE="$OMAKUB_PATH/install/terminal/optional/app-ollama.sh" ;;
   "tailscale") INSTALLER_FILE="$OMAKUB_PATH/install/terminal/optional/app-tailscale.sh" ;;
+  "github-copilot-cli") INSTALLER_FILE="$OMAKUB_PATH/install/terminal/optional/app-github-copilot-cli.sh" ;;
   "geekbench") INSTALLER_FILE="$OMAKUB_PATH/install/terminal/optional/app-geekbench.sh" ;;
   "tg-tf-switch") INSTALLER_FILE="$OMAKUB_PATH/install/terminal/optional/app-tg-tf-switch.sh" ;;
   *) INSTALLER_FILE="$OMAKUB_PATH/install/desktop/optional/app-$INSTALLER.sh" ;;

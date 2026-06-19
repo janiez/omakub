@@ -13,7 +13,7 @@ webm2mp4() {
 iso2sd() {
   if [ $# -ne 2 ]; then
     echo "Usage: iso2sd <input_file> <output_device>"
-    echo "Example: iso2sd ~/Downloads/ubuntu-25.04-desktop-amd64.iso /dev/sda"
+    echo "Example: iso2sd ~/Downloads/debian-13-arm64.iso /dev/sda"
     echo -e "\nAvailable SD cards:"
     lsblk -d -o NAME | grep -E '^sd[a-z]' | awk '{print "/dev/"$1}'
   else
@@ -75,7 +75,7 @@ web2app-remove() {
   rm "$ICON_PATH"
 }
 
-# Move a reference to a .desktop file, like Spotify.desktop, to a named folder, like Xtra.
+# Move a reference to a .desktop file, like Chrome.desktop, to a named folder, like Xtra.
 # Don't use full path for the .desktop file.
 app2folder() {
   if [ "$#" -ne 2 ]; then
@@ -132,6 +132,3 @@ app2folder-remove() {
 
 # Ensure that external keyboards that use an fn key has the F keys as the default
 alias fix_fkeys='echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode'
-
-# Spotify window is too large on many displays, so fix this by zooming it down
-alias fix_spotify_window_size="sudo sed -i 's|^Exec=.*|Exec=spotify --force-device-scale-factor=1.5 %U|' /usr/local/share/applications/spotify.desktop"

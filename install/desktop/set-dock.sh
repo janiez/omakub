@@ -9,7 +9,6 @@ apps=(
 	"WhatsApp.desktop"
 	"signal-desktop.desktop"
 	"Zoom.desktop"
-	"spotify.desktop"
 	"steam.desktop"
 	"pinta_pinta.desktop"
 	"md.obsidian.Obsidian.desktop"

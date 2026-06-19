@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install the latest mainline kernel on Debian 13 arm64.
-# Uses official Debian kernel packages — no PPAs or Ubuntu repos needed.
+# Uses official Debian kernel packages from the default repositories.
 
 sudo apt update
 
